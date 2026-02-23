@@ -1,5 +1,5 @@
 import numpy as np
-from scipy.sparse import csc_matrix
+from scipy.sparse import csc_matrix, csr_matrix
 
 
 def create_hx_indices(L):
@@ -111,7 +111,7 @@ def create_data(L):
     return np.ones(2 * L * (L - 1), dtype=np.int32)
 
 
-def create_csc_H(L, basis):
+def create_H(L, basis):
     basis = basis.lower()
 
     data = create_data(L)

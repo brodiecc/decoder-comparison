@@ -1,0 +1,13 @@
+name: decoder-comparison
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - scipy
+  - jupyterlab
+  - ipykernel
+  - pytest
+  - pip
+  - pip:
+      - pymatching
